@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101d2b">
+  <meta name="description" content="ZHENGONXPORT helps Chinese businesses build smarter international trade systems with AI, Alibaba.com, social media, and independent websites.">
+  <meta name="keywords" content="foreign trade, Alibaba.com, AI for export, foreign trade website, GEO, SEO, social media marketing">
+  <title>ZHENGONXPORT | Foreign Trade Digital Growth</title>
+  <style>
+    :root {
+      --navy: #101d2b;
+      --navy2: #172b3e;
+      --teal: #43c6b5;
+      --ink: #172536;
+      --muted: #667587;
+      --paper: #f5f7f8;
+      --white: #fff;
+      --line: #e4e9ed;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, Arial, sans-serif;
+      color: var(--ink);
+      line-height: 1.7;
+      background: var(--white);
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(1120px, 90%); margin: auto; }
+    header {
+      background: var(--navy);
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 1px solid #ffffff18;
+    }
+    nav {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .logo { font-size: 23px; font-weight: 800; letter-spacing: 1px; }
+    .logo span { color: var(--teal); }
+    .nav-links { display: flex; gap: 27px; font-size: 13px; color: #d4dde5; }
+    .nav-links a:hover { color: var(--teal); }
+    .nav-cta {
+      border: 1px solid var(--teal);
+      padding: 9px 17px;
+      border-radius: 5px;
+      color: var(--teal);
+      font-size: 13px;
+    }
+    .hero {
+      background: linear-gradient(120deg, #101d2b, #1c3549);
+      color: white;
+      padding: 110px 0 115px;
+      overflow: hidden;
+    }
+    .eyebrow {
+      color: var(--teal);
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      font-size: 11px;
+      font-weight: 700;
+    }
+    h1 {
+      font-size: clamp(40px, 6vw, 66px);
+      line-height: 1.12;
+      letter-spacing: -2px;
+      max-width: 800px;
+      margin: 22px 0;
+    }
+    h1 span { color: var(--teal); }
+    .hero p {
+      max-width: 650px;
+      color: #c5d0d9;
+      font-size: 17px;
+    }
+    .actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 32px; }
+    .btn {
+      display: inline-block;
+      padding: 13px 22px;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .btn-primary { background: var(--teal); color: var(--navy); }
+    .btn-outline { border: 1px solid #ffffff70; color: white; }
+    section { padding: 86px 0; }
+    .section-head { max-width: 680px; margin-bottom: 40px; }
+    h2 { font-size: clamp(29px, 4vw, 39px); line-height: 1.2; margin: 12px 0; }
+    .section-head p, .muted { color: var(--muted); }
+    .services { background: var(--paper); }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+    .service-card {
+      background: white;
+      padding: 27px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px #10203012;
+    }
+    .number { color: #28a99a; font-size: 12px; font-weight: 800; letter-spacing: 1px; }
+    h3 { font-size: 18px; margin: 12px 0 8px; }
+    .service-card p { color: var(--muted); font-size: 14px; margin: 0; }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 65px;
+      align-items: center;
+    }
+    .about-panel {
+      background: var(--navy);
+      color: white;
+      padding: 38px;
+      border-radius: 8px;
+    }
+    .about-panel p { color: #c5d0d9; }
+    .check { color: var(--teal); margin-right: 9px; }
+    .approach { background: var(--paper); }
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+    .step { border-top: 2px solid var(--teal); padding-top: 18px; }
+    .step strong { font-size: 13px; color: #229b8e; }
+    .step p { color: var(--muted); font-size: 14px; }
+    .contact {
+      background: var(--navy);
+      color: white;
+      text-align: center;
+    }
+    .contact p { color: #c5d0d9; max-width: 620px; margin: 15px auto 28px; }
+    footer {
+      background: #0b1520;
+      color: #aab7c3;
+      padding: 25px 0;
+      font-size: 12px;
+    }
+    footer .container {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    @media (max-width: 760px) {
+      .nav-links { display: none; }
+      .hero { padding: 78px 0; }
+      .grid, .steps, .about-grid { grid-template-columns: 1fr; }
+      .about-grid { gap: 30px; }
+      section { padding: 65px 0; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <a class="logo" href="#">ZHENGON<span>XPORT</span></a>
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#approach">Our Approach</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <a class="nav-cta" href="#contact">Let's Talk</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <div class="eyebrow">Foreign Trade · Digital Growth · AI</div>
+      <h1>Build a Smarter Way to <span>Go Global.</span></h1>
+      <p>
+        Practical digital solutions for Chinese businesses and foreign trade
+        professionals. Connect AI, Alibaba.com, global social media and
+        independent websites to build a stronger international presence.
+      </p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#services">Explore Services →</a>
+        <a class="btn btn-outline" href="#about">Discover ZHENGONXPORT</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">What We Do</div>
+        <h2>Digital Tools for International Trade</h2>
+        <p>
+          From marketplace operations to AI-powered workflows, explore
+          practical ways to improve your export business.
+        </p>
+      </div>
+      <div class="grid">
+        <article class="service-card">
+          <div class="number">01 / MARKETPLACE</div>
+          <h3>Alibaba.com Services</h3>
+          <p>Practical guidance for Alibaba.com account setup, store planning,
+          operations and digital marketplace growth.</p>
+        </article>
+        <article class="service-card">
+          <div class="number">02 / ARTIFICIAL INTELLIGENCE</div>
+          <h3>AI for Foreign Trade</h3>
+          <p>AI tools, workflow improvement and customized AccioWork skill
+          packages for everyday export tasks.</p>
+        </article>
+        <article class="service-card">
+          <div class="number">03 / SOCIAL MEDIA</div>
+          <h3>Global Social Media</h3>
+          <p>Practical strategies for LinkedIn, Facebook, Instagram, TikTok,
+          X and WhatsApp business communication.</p>
+        </article>
+        <article class="service-card">
+          <div class="number">04 / WEB DEVELOPMENT</div>
+          <h3>Foreign Trade Websites</h3>
+          <p>Independent website planning, content structure and digital
+          foundations for international business.</p>
+        </article>
+        <article class="service-card">
+          <div class="number">05 / SEARCH VISIBILITY</div>
+          <h3>GEO & SEO</h3>
+          <p>Build useful, discoverable content for search engines and
+          AI-powered answer platforms.</p>
+        </article>
+        <article class="service-card">
+          <div class="number">06 / DIGITAL WORKSPACE</div>
+          <h3>Business Tools Setup</h3>
+          <p>Guidance on business email, overseas-facing digital tools,
+          account configuration and safer workflows.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container about-grid">
+      <div>
+        <div class="eyebrow">About ZHENGONXPORT</div>
+        <h2>Make Digital Tools Work for Your Export Business.</h2>
+        <p class="muted">
+          International trade is changing. AI, online marketplaces, social
+          platforms and independent websites are creating new opportunities
+          for businesses of every size.
+        </p>
+        <p class="muted">
+          ZHENGONXPORT is an independent foreign trade digital growth
+          initiative focused on practical knowledge, useful tools and
+          actionable guidance.
+        </p>
+      </div>
+      <div class="about-panel">
+        <div class="eyebrow">Our Focus</div>
+        <h3>Practical. Connected. Growth-oriented.</h3>
+        <p><span class="check">✓</span> Clear and actionable guidance</p>
+        <p><span class="check">✓</span> AI-assisted business workflows</p>
+        <p><span class="check">✓</span> Global digital channel development</p>
+        <p><span class="check">✓</span> Knowledge sharing for trade professionals</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="approach" id="approach">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">How We Work</div>
+        <h2>From Challenge to Practical Action</h2>
+        <p>A clear process helps turn digital ideas into useful business steps.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <strong>STEP 01</strong>
+          <h3>Understand</h3>
+          <p>Identify your business goals, current channels and key challenges.</p>
+        </div>
+        <div class="step">
+          <strong>STEP 02</strong>
+          <h3>Build</h3>
+          <p>Choose suitable tools, workflows and digital growth strategies.</p>
+        </div>
+        <div class="step">
+          <strong>STEP 03</strong>
+          <h3>Improve</h3>
+          <p>Review results, refine your approach and keep learning.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="eyebrow">Start a Conversation</div>
+      <h2>Ready to Build Your Digital Export Presence?</h2>
+      <p>
+        Whether you are exploring AI tools, improving your marketplace
+        presence or planning an independent website, start with a clear goal.
+      </p>
+      <a class="btn btn-primary" href="#services">Explore How We Can Help →</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div>© 2026 ZHENGONXPORT. All rights reserved.</div>
+    <div>Independent Foreign Trade Digital Growth Initiative.</div>
+  </div>
+</footer>
+
+</body>
+</html>
